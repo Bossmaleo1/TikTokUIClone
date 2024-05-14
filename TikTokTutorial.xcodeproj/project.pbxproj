@@ -20,6 +20,10 @@
 		593018182BF26442004286BF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593018172BF26442004286BF /* Post.swift */; };
 		5930181D2BF26867004286BF /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5930181C2BF26867004286BF /* FeedViewModel.swift */; };
 		5930181F2BF28A62004286BF /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5930181E2BF28A62004286BF /* CustomVideoPlayer.swift */; };
+		593018262BF2DD34004286BF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593018252BF2DD34004286BF /* LoginView.swift */; };
+		593018282BF2DD5A004286BF /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593018272BF2DD5A004286BF /* RegistrationView.swift */; };
+		5930182A2BF2E400004286BF /* StandardTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593018292BF2E400004286BF /* StandardTextFieldModifier.swift */; };
+		5930182C2BF37A3F004286BF /* AuthenticationFormProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5930182B2BF37A3F004286BF /* AuthenticationFormProtocol.swift */; };
 		59DEB7902BB7584100C76980 /* TikTokTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DEB78F2BB7584100C76980 /* TikTokTutorialApp.swift */; };
 		59DEB7922BB7584100C76980 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DEB7912BB7584100C76980 /* ContentView.swift */; };
 		59DEB7942BB7584300C76980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59DEB7932BB7584300C76980 /* Assets.xcassets */; };
@@ -41,6 +45,10 @@
 		593018172BF26442004286BF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		5930181C2BF26867004286BF /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		5930181E2BF28A62004286BF /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
+		593018252BF2DD34004286BF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		593018272BF2DD5A004286BF /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		593018292BF2E400004286BF /* StandardTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTextFieldModifier.swift; sourceTree = "<group>"; };
+		5930182B2BF37A3F004286BF /* AuthenticationFormProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFormProtocol.swift; sourceTree = "<group>"; };
 		59DEB78C2BB7584100C76980 /* TikTokTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTokTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59DEB78F2BB7584100C76980 /* TikTokTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokTutorialApp.swift; sourceTree = "<group>"; };
 		59DEB7912BB7584100C76980 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +105,44 @@
 			isa = PBXGroup;
 			children = (
 				5930181C2BF26867004286BF /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		593018202BF2DCC3004286BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		593018212BF2DCCE004286BF /* Protocole */ = {
+			isa = PBXGroup;
+			children = (
+				5930182B2BF37A3F004286BF /* AuthenticationFormProtocol.swift */,
+			);
+			path = Protocole;
+			sourceTree = "<group>";
+		};
+		593018222BF2DCDA004286BF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		593018232BF2DCE6004286BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				593018252BF2DD34004286BF /* LoginView.swift */,
+				593018272BF2DD5A004286BF /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		593018242BF2DCEF004286BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -190,6 +236,7 @@
 		59DEB7A22BB758A600C76980 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				593018292BF2E400004286BF /* StandardTextFieldModifier.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -197,6 +244,11 @@
 		59DEB7A32BB758C800C76980 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				593018242BF2DCEF004286BF /* ViewModel */,
+				593018232BF2DCE6004286BF /* View */,
+				593018222BF2DCDA004286BF /* Service */,
+				593018212BF2DCCE004286BF /* Protocole */,
+				593018202BF2DCC3004286BF /* Model */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -350,13 +402,17 @@
 				593018022BF17F8A004286BF /* FeedView.swift in Sources */,
 				5930181F2BF28A62004286BF /* CustomVideoPlayer.swift in Sources */,
 				5930180C2BF22CCA004286BF /* NotificationCell.swift in Sources */,
+				593018282BF2DD5A004286BF /* RegistrationView.swift in Sources */,
 				593018102BF23FBD004286BF /* ProfileHeaderView.swift in Sources */,
+				5930182A2BF2E400004286BF /* StandardTextFieldModifier.swift in Sources */,
 				593018162BF246FE004286BF /* UserStatView.swift in Sources */,
 				593018042BF1859D004286BF /* FeedCell.swift in Sources */,
 				5930181D2BF26867004286BF /* FeedViewModel.swift in Sources */,
 				593018182BF26442004286BF /* Post.swift in Sources */,
+				5930182C2BF37A3F004286BF /* AuthenticationFormProtocol.swift in Sources */,
 				59DEB7922BB7584100C76980 /* ContentView.swift in Sources */,
 				5930180A2BF22CB3004286BF /* NotificationView.swift in Sources */,
+				593018262BF2DD34004286BF /* LoginView.swift in Sources */,
 				59DEB7902BB7584100C76980 /* TikTokTutorialApp.swift in Sources */,
 				593018062BF22692004286BF /* ExploreView.swift in Sources */,
 				593018122BF23FF4004286BF /* PostGridView.swift in Sources */,
